@@ -1,0 +1,1090 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Corinthia&family=Luxurious+Script&family=Montserrat:wght@300&family=Poppins:wght@300;400;500;600&family=Recursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--alice);
+}
+
+:root{
+
+    --orange:rgb(140, 111, 85);
+    --black:black;
+    --white:rgba(255,255,255);
+
+
+
+    --alice:'Alice', serif;;
+    --monserat: 'Montserrat', sans-serif;
+    --popins : 'Poppins', sans-serif;
+    --rescursive : 'Recursive', sans-serif;
+    --mekilit : 'Luxurious Script', cursive;
+
+
+    --light:300;
+    --light-italic :italic;
+    --more-light:400;
+    --light-bold:500;
+    --bold:600
+}
+
+.music{
+    display: none;
+}
+
+.depan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    z-index: 999999;
+}
+
+.depan .container{
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.depan .container .gambar{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.depan .container .tulisan{
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    background: var(--orange);
+    padding-bottom: 2px;
+}
+
+.depan .container h1{
+   padding: 10px 0;
+}
+
+.depan .container p{
+    padding: 5px 0;
+}
+
+.depan .container a{
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--orange);
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    opacity: 1;
+    transition: 1s;
+}
+
+ .depan .container .gambar img{
+     height: 300px;
+ }
+
+.depan.active{
+opacity: 0;
+}
+
+.depan .container .gambar img{
+    width: 100%;
+}
+
+.header .container .gambar{
+    width: 100%;
+    position: relative;
+}
+
+.header .container .gambar img{
+    width: 100%;
+}
+
+.header .container .tulisan{
+    position: absolute;
+    left: 35%;
+    top: 28%;
+}
+
+.header .container p{
+    color: var(--orange);
+    font-family: 'Luxurious Script', cursive;
+    font-size: 5em;
+}
+
+.header .container .tengah{
+    text-align: center;
+}
+
+.header .container .kanan {
+    text-align: right;
+}
+
+
+/* section nikah */
+
+.nganten{
+    padding: 40px 0;
+}
+
+.nganten .container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nganten .container .gambar{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.nganten .container .gambar img{
+    width: 100%;
+}
+
+.nganten .tulisan p{
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+
+.nganten .desweding .picture{
+    width: 40%;
+    margin: 10px auto ;
+    border: 4px solid var(--orange);
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.nganten .desweding .picture img{
+    width: 100%;
+    border-radius: 100px;
+}
+.nganten .desweding .biodata{
+    line-height: 30px;
+}
+.nganten .desweding h1{
+    color: var(--orange);
+    font-family: var(--rescursive);
+    font-family: 'Corinthia', cursive;
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.nganten .desweding .biodata a{
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+    color: var(--orange);
+}
+
+.nganten .desweding .biodata .left , .nganten .desweding .biodata .mid , .nganten .desweding .biodata .right{
+    font-style: var(--light-italic);
+}
+
+.nganten .desweding .orangtua{
+    font-size: 1.4em;
+}
+
+.nganten .desweding h3{
+    margin: 30px 0;
+    font-size: 4.5em;
+    font-family: 'Corinthia', cursive;
+    color: var(--orange);
+}
+
+/* tutup section */
+
+
+/* gambar weding */
+
+.conten{
+    padding: 40px 0;
+    background-color: var(--orange);
+}
+
+.conten .container .gambar{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+}
+
+.conten .container .gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+.conten .container .gambar::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+}
+.conten .container p{
+    font-size: 0.8em;
+}
+.conten .container .veda{
+    color: var(--orange);
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.conten .container .text{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    color: var(--white);
+    z-index: 9999;
+    padding: 10px;
+}
+
+.doa {
+    padding: 30px 0;
+}
+
+.doa .container{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.doa .container .gambar{
+    width: 50%;
+    margin: 10px auto;
+}
+
+.doa .container .gambar img{
+    width: 100%;
+}
+
+.doa .container .tulisan{
+    width: 80%;
+    margin: 0 auto;
+   line-height: 30px;
+}
+
+.resepsi{
+    padding: 50px 0;
+    background-color: var(--orange);
+    position: relative;
+}
+
+.resepsi .container{
+    text-align: center;
+}
+
+.resepsi .container .gambar{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 300px;
+}
+
+.resepsi .container .gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+.resepsi .container .tulisan{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 9999;
+    line-height: 40px;
+}
+
+.resepsi .container .tulisan a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    font-weight: var(--light-bold);
+
+}
+
+.resepsi .container .gambar::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+}
+
+.resepsi .container .box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.resepsi .container .box .card{
+    width: 20%;
+    box-shadow: 0 4px 16px rgba(0,0,0,.7);
+}
+
+.resepsi .container .box .bungkus{
+    width: 100%;
+}
+
+.resepsi .container .box .bungkus .kosong{
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px ;
+    box-sizing: border-box;
+}
+
+.resepsi .container .box .bungkus .kotak{
+    width: 100%;
+    background-color: var(--orange);
+    padding: 5px ;
+    box-sizing: border-box;
+    color: #ffff;
+    font-weight: 200;
+    font-style: ;
+}
+.galeri {
+    padding: 30px 0;
+}
+.galeri .judul h1{
+    background-color: var(--orange);
+    width: 40%;
+    text-align: center;
+    color: var(--white);
+    padding: 10px 0;
+    margin: 50px auto;
+}
+
+.galeri .container{
+   width: 90%;
+   margin: 0 auto;
+}
+
+
+.galeri .container .gambar{
+    width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 180px;
+}
+
+.galeri .container .gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.covid{
+    padding: 10px 0;
+}
+
+.covid .judul{
+    text-align: center;
+    color: var(--orange);
+    margin: 5px;
+}
+
+.covid .protokol{
+    text-align: center;
+}
+
+.covid .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.covid .container .box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.covid .container .bersih p{
+    margin-top: 10px;
+}
+
+.covid .bungkus{
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.covid .bungkus:hover .icon{
+    transform: scale(1.2);
+}
+
+.covid .icon .fa-hands-wash ,  .fa-head-side-mask , .fa-people-arrows , .fa-handshake , .fa-users , .fa-pump-medical { 
+    height: 70px;
+    font-size:2em;
+}
+
+
+.matur{
+    padding: 50px 0 20px 0;
+}
+
+.matur .judul{
+    text-align: center;
+}
+
+.matur .judul h3{
+    font-family: 'Corinthia', cursive;
+    font-size: 2.5em;
+    color: var(--orange);
+}
+
+.social{
+    text-align: center;
+}
+.social ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social ul li a{
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 1.2em;
+}
+/* akhir gambar weding */
+
+
+/* media max 400 */
+
+@media screen and (max-width:415px){
+   
+    .header .container .tulisan{
+        left: 35%;
+        top: 26%;
+    }
+    
+    .header .container p{
+        color: var(--orange);
+        font-size: 2.5em;
+        font-family: 'Luxurious Script', cursive;
+        font-size: 4em;
+    }
+
+    .nganten .desweding h1{
+        font-size: 2em;
+    }
+
+    .nganten .container .biodata .orangtua{
+        font-size: 1em;
+    }
+
+    .depan .container h1{
+        font-size: 1.4em;
+     }
+     
+     .depan .container p{
+         font-size: 0.8em;
+     }
+     
+     .depan .container a{
+         font-size: 0.7em;
+         width: 50%;
+     }
+
+     .depan .container {
+         margin: 90px 0;
+     }
+
+     .depan .container{
+        margin: 40px auto;
+     }
+
+     .conten .container .text{
+        bottom: 30px;
+    }
+
+    .conten .container p{
+        font-size: 0.6em;
+    }
+
+    .conten .container .veda{
+        font-size: 1em;
+    }
+
+    .doa .container .gambar{
+        width: 50%;
+        margin: 10px auto;
+    }
+    
+    .doa .container .gambar img{
+        width: 100%;
+    }
+    
+    .doa .container .tulisan{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .nganten .container .gambar{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .nganten .container .gambar img{
+        width: 100%;
+    }
+
+    .resepsi .container .gambar .tulisan{
+        line-height: 25px;
+    }
+
+    .resepsi .container .gambar .tulisan{
+        top: 60px;
+    }
+
+    .resepsi .container .gambar .tulisan h1{
+        font-size: 1em;
+    }
+
+    .resepsi .container .gambar .tulisan p{
+        font-size: 0.7em;
+    }
+
+    .resepsi .container .gambar .tulisan a{
+        font-size: 0.8em;
+        padding: 4px 20px;
+    }
+
+    .covid .protokol p{
+        width: 95%;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+
+    .covid .bersih p{
+        font-size: 0.8em;
+    }
+    
+
+    .galeri .container .gambar{
+        width: 40%;
+        margin: 0 auto;
+        cursor: pointer;
+        height: 180px;
+    }
+    
+    .galeri .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+
+}
+
+/* media max end 400 */
+
+
+
+/* media awal 500px */
+
+@media screen and (min-width:565px){
+    
+    .header .container .gambar .tulisan p{
+        color: var(--orange);
+        font-family: 'Luxurious Script', cursive;
+        font-size: 8em;
+    }
+
+    .header .container .tulisan{
+        left: 35%;
+        top: 27%;
+    }
+
+    .depan .container{
+       margin: 40px auto;
+    }
+    .depan .container .gambar img{
+        height: 370px;
+    }
+
+    .conten .container .text{
+        bottom: 30px;
+    }
+
+    .conten .container p{
+        font-size: 1em;
+    }
+
+    .conten .container .veda{
+        font-size: 1.2em;
+    }
+    
+    .doa .container .gambar{
+        width: 40%;
+        margin: 10px auto;
+    }
+    
+    .doa .container .gambar img{
+        width: 100%;
+    }
+    
+    .doa .container .tulisan{
+        width: 80%;
+        margin: 0 auto;
+       line-height: 30px;
+    }
+    
+    .nganten .container .gambar{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .nganten .container .gambar img{
+        width: 100%;
+    }
+    
+    .nganten .tulisan p{
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    .resepsi .container .tulisan{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        z-index: 9999;
+        line-height: 40px;
+    }
+    
+    .resepsi .container .gambar .tulisan h1{
+        font-size: 2em;
+    }
+
+    .resepsi .container .gambar .tulisan p{
+        font-size: 1.2em;
+    }
+
+    .resepsi .container .tulisan a{
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 25px;
+        border-radius: 10px;
+        background-color: var(--orange);
+        font-weight: var(--light-bold);
+    
+    }
+
+    .covid .icon{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: var(--orange);
+        text-align: center;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .covid .judul h1{
+        font-size: 2em;
+    }
+
+    .covid .icon .fa-hands-wash ,  .fa-head-side-mask , .fa-people-arrows , .fa-handshake , .fa-users , .fa-pump-medical { 
+        height: 90px;
+        font-size:2em;
+    }
+
+
+    .galeri .container .gambar{
+        width: 30%;
+        margin: 0 auto;
+        height: 200px;
+    }
+    
+    .galeri .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .conten .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 370px;
+    }
+    
+    .conten .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .resepsi .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 370px;
+    }
+    
+    .resepsi .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
+@media screen and (min-width:767px){
+
+    .header .container .gambar .tulisan p{
+        color: var(--orange);
+        font-family: 'Luxurious Script', cursive;
+        font-size: 10em;
+    }
+
+    .header .container .tulisan{
+        left: 35%;
+        top: 27%;
+    }
+
+    .nganten .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .nganten .box .desweding{
+        width: 33%;
+        
+    }
+
+    .nganten .desweding h1 {
+        font-size: 1.5em;
+    }
+
+    .nganten .desweding .orangtua {
+        font-size: 0.9em;
+    }
+
+    .nganten .desweding .left , .nganten .desweding .mid , .nganten .desweding .right , .nganten .desweding .alamat{
+        font-size: 0.9em;
+    }
+
+    .nganten .box .desweding .biodata .alamat p{
+        font-size: 0.9em;
+    }
+
+    .depan .container{
+        margin: 20px auto;
+     }
+
+     .depan .container .gambar{
+         width: 50%;
+     }
+     .depan .container .gambar img{
+         height: 400px;
+         width: 100%;
+     }
+
+     .depan .container .tulisan{
+         width: 50%;
+     }
+
+     .conten .container .text{
+        bottom: 30px;
+    }
+
+    .conten .container p{
+        font-size: 1.2em;
+    }
+
+    .conten .container .veda{
+        font-size: 1.4em;
+    }
+
+    .doa .container .gambar{
+        width: 40%;
+        margin: 10px auto;
+    }
+    
+    .doa .container .gambar img{
+        width: 100%;
+    }
+    
+    .doa .container .tulisan{
+        width: 80%;
+        margin: 0 auto;
+       line-height: 30px;
+    }
+
+    .nganten .container .gambar{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .nganten .container .gambar img{
+        width: 100%;
+    }
+    
+    .nganten .tulisan p{
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    .resepsi .container .tulisan{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        z-index: 9999;
+        line-height: 60px;
+    }
+    
+    .resepsi .container .gambar .tulisan h1{
+        font-size: 2.5em;
+    }
+
+    .resepsi .container .gambar .tulisan p{
+        font-size: 1.7em;
+    }
+
+    .resepsi .container .tulisan a{
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 25px;
+        border-radius: 10px;
+        background-color: var(--orange);
+        font-weight: var(--light-bold);
+    
+    }
+
+    .covid .icon{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background-color: var(--orange);
+        text-align: center;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .covid .judul h1{
+        font-size: 2.5em;
+    }
+
+    .covid .icon .fa-hands-wash ,  .fa-head-side-mask , .fa-people-arrows , .fa-handshake , .fa-users , .fa-pump-medical { 
+        height: 110px;
+        font-size:3em;
+    }
+
+    .galeri .container .gambar{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .galeri .container .gambar{
+        width: 30%;
+        margin: 0 auto;
+        height: 240px;
+    }
+    
+    .galeri .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .conten .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 450px;
+    }
+    
+    .conten .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .resepsi .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 450px;
+    }
+    
+    .resepsi .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:950px){
+    .header .container .gambar .tulisan p{
+        color: var(--orange);
+        font-family: 'Luxurious Script', cursive;
+        font-size: 10em;
+    }
+
+    .header .container .tulisan{
+        left: 35%;
+        top: 30%;
+    }
+
+    .depan .container .gambar{
+        width: 30%;
+    }
+    .depan .container .gambar img{
+        height: 400px;
+        width: 100%;
+    }
+
+    .depan .container .tulisan{
+        width: 30%;
+    }
+
+    .conten .container .text{
+        bottom: 50px;
+    }
+
+    .conten .container p{
+        font-size: 1.5em;
+    }
+
+    .conten .container .veda{
+        font-size: 1.7em;
+    }
+
+    .doa .container .gambar{
+        width: 30%;
+        margin: 10px auto;
+    }
+    
+    .doa .container .gambar img{
+        width: 100%;
+    }
+    
+    .doa .container .tulisan{
+        width: 80%;
+        margin: 0 auto;
+       line-height: 30px;
+    }
+
+    .nganten .container .gambar{
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .nganten .container .gambar img{
+        width: 100%;
+    }
+    
+    .nganten .tulisan p{
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    .resepsi .container .tulisan{
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        z-index: 9999;
+        line-height: 80px;
+    }
+    
+    .resepsi .container .gambar .tulisan h1{
+        font-size: 3.5em;
+    }
+
+    .resepsi .container .gambar .tulisan p{
+        font-size: 2em;
+    }
+
+    .resepsi .container .tulisan a{
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 25px;
+        border-radius: 10px;
+        background-color: var(--orange);
+        font-weight: var(--light-bold);
+    
+    }
+
+    .covid .icon{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: var(--orange);
+        text-align: center;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .covid .judul h1{
+        font-size: 2.5em;
+    }
+
+    .covid .icon .fa-hands-wash ,  .fa-head-side-mask , .fa-people-arrows , .fa-handshake , .fa-users , .fa-pump-medical { 
+        height: 140px;
+        font-size:4em;
+    }
+    .galeri .container .gambar{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .galeri .container .gambar{
+        width: 30%;
+        margin: 0 auto;
+        height: 280px;
+    }
+    
+    .galeri .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .conten .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 600px;
+    }
+    
+    .conten .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .resepsi .container .gambar{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        height: 600px;
+    }
+    
+    .resepsi .container .gambar img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
